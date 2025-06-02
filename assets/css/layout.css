@@ -1,3 +1,38 @@
+*{margin: 0
+}
+html,
+body {
+  height: 100%;
+  padding: 3px;
+}
+html {
+  display: table;
+  margin: auto;
+}
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+img {
+    max-width: 100%;
+  height: auto;
+}
+.flex_right {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 @media (width <=600px) {
-    
+    .mv_center {
+  display: block;
+  text-align: center;
+}
+}
+@media (width > 600px){
+
 }

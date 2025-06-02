@@ -1,0 +1,48 @@
+@font-face {
+    font-family: fuzzy;
+    src: url(../fonts/FuzzyBubbles-Regular.ttf);
+}
+@font-face {
+    font-family: que;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+h1 {
+    font-family: fuzzy;
+    font-size: 36px;
+    padding-top: 30px;
+}
+h2{
+   font-family: fuzzy;
+    font-size: 32px; 
+}
+h3 {
+    font-family: fuzzy;
+    font-size: 24px; 
+}
+p {
+    font-family: que;
+    font-size: 18px;
+}
+main {background-color: #F2EAE7;
+padding: 10px;}
+.deaktiv {
+    font-family: fuzzy;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #F2EAE7;
+}
+.aktiv {
+    font-family: fuzzy;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding: 5px;
+    background-color: #F2EAE7;
+}
+.border {
+    border: 1px solid black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
