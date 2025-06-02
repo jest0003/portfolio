@@ -22,13 +22,13 @@ h3 {
 p {
     font-family: que;
     font-size: 18px;
+    margin: 5px;
+    max-width: 550px;
 }
-main {background-color: #F2EAE7;
-padding: 10px;}
 .deaktiv {
     font-family: fuzzy;
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
     background-color: #F2EAE7;
 }
 .aktiv {
@@ -45,4 +45,33 @@ padding: 10px;}
 a {
     text-decoration: none;
     color: black;
+}
+.cta_blaa {
+    font-family: que;
+    display: flex;
+    justify-content: center;
+    background-image: url(../icon/cta_blaa.png);
+    background-position: center;
+    height: 56px;
+    width: 150px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: right;
+    align-items: center;
+    margin: 10px;
+}
+
+@media (width <=600px) {
+    .cta_blaa_wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (width > 600px){
+    .cta_blaa_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }

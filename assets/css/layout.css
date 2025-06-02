@@ -12,7 +12,10 @@ html {
 body {
   display: table-cell;
   vertical-align: middle;
+  max-width: 1000px;
 }
+main, footer {background-color: #F2EAE7;
+padding: 10px;}
 img {
     max-width: 100%;
   height: auto;
@@ -34,5 +37,14 @@ img {
 }
 }
 @media (width > 600px){
-
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main, footer {
+  padding: 30px;
+}
 }
