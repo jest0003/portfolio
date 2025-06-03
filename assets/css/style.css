@@ -36,7 +36,7 @@ p {
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-left: 1px solid black;
-    padding: 5px;
+    padding: 10px;
     background-color: #F2EAE7;
 }
 .border {
@@ -45,6 +45,10 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+.hvid_blok {
+    display: block;
+    background-color: white;
 }
 .cta_blaa {
     font-family: que;

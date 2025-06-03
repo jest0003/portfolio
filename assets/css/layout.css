@@ -20,6 +20,11 @@ img {
     max-width: 100%;
   height: auto;
 }
+.icon {
+  max-width: 40px;
+  height: auto;
+  margin-left: 10px;
+}
 .flex_right {
     display: flex;
     justify-content: end;
@@ -35,11 +40,24 @@ img {
   display: block;
   text-align: center;
 }
+.ms_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 }
 @media (width > 600px){
-.grid_1-2 {
+.grid_2-3 {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
