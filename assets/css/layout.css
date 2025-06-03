@@ -35,6 +35,12 @@ img {
     flex-direction: row;
     justify-content: space-between;
 }
+.center {
+  display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+}
 @media (width <=600px) {
     .mv_center {
   display: block;

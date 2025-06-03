@@ -46,15 +46,25 @@ a {
     text-decoration: none;
     color: black;
 }
-.hvid_blok {
-    display: block;
-    background-color: white;
-}
 .cta_blaa {
     font-family: que;
     display: flex;
     justify-content: center;
     background-image: url(../icon/cta_blaa.png);
+    background-position: center;
+    height: 56px;
+    width: 150px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: right;
+    align-items: center;
+    margin: 10px;
+}
+.cta_orange {
+    font-family: que;
+    display: flex;
+    justify-content: center;
+    background-image: url(../icon/cta_orange.png);
     background-position: center;
     height: 56px;
     width: 150px;
@@ -71,6 +81,10 @@ a {
         justify-content: center;
         width: 100%;
     }
+    .ms_hvid_blok {
+        display: block;
+    background-color: white;
+    }
 }
 @media (width > 600px){
     .cta_blaa_wrapper {
@@ -78,4 +92,8 @@ a {
         justify-content: flex-end;
         width: 100%;
     }
+    .hvid_blok {
+    display: block;
+    background-color: white;
+}
 }
