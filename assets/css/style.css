@@ -28,8 +28,15 @@ p {
     margin: 5px;
     max-width: 550px;
 }
+footer {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
 main {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
     position: relative;
     z-index: 1;
     margin-top: 30px;
@@ -101,6 +108,9 @@ a {
     text-align: right;
     align-items: center;
     margin: 10px;
+}
+#board {
+    background-color: black;
 }
 
 @media (width <=600px) {
