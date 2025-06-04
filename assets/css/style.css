@@ -28,11 +28,19 @@ p {
     margin: 5px;
     max-width: 550px;
 }
+main {
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+}
 .deaktiv {
     font-family: fuzzy;
     border: 1px solid black;
     padding: 10px;
     background-color: #F2EAE7;
+    position: relative;
+    z-index: 2;
 }
 .aktiv {
     font-family: fuzzy;
@@ -41,6 +49,9 @@ p {
     border-left: 1px solid black;
     padding: 10px;
     background-color: #F2EAE7;
+    position: relative;
+    z-index: 3;
+    margin-bottom: -1px;
 }
 li {
     text-decoration: none;
