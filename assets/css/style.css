@@ -42,6 +42,15 @@ p {
     padding: 10px;
     background-color: #F2EAE7;
 }
+li {
+    text-decoration: none;
+    list-style: none;
+    font-family: que;
+    font-size: 18px;
+}
+.padding_20 {
+    padding: 20px;
+}
 .border {
     border: 1px solid black;
 }
