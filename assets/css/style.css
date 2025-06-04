@@ -15,7 +15,7 @@ h1 {
 h2{
    font-family: fuzzy;
     font-size: 32px; 
-    padding-top: 30px;
+    padding-top: 10px;
 }
 h3 {
     font-family: fuzzy;
@@ -47,6 +47,10 @@ li {
     list-style: none;
     font-family: que;
     font-size: 18px;
+}
+.marg_bottom_10 {
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .padding_20 {
     padding: 20px;
