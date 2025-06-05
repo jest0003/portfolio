@@ -69,6 +69,10 @@ justify-content: space-between;
         align-items: center;
         margin: auto;
 }
+.marg_{
+  margin-top: 25px;
+  margin-bottom: 25px;;
+}
 .max_400 {
   max-width: 400px;
 }
