@@ -75,6 +75,9 @@ function update (){
 requestAnimationFrame(update);
 
 if (gameOver) {
+    context.fillStyle="orange";
+    context.font="40px que";
+    context.fillText("GAME OVER", board.width/2 - tileSize*3, board.height/2 - tileSize)
     return;
 }
 
