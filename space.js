@@ -43,6 +43,10 @@ let bulletHastighedY = -10; //hastighed på bullets, skal være i minus for at k
 
 let score = 0;
 let gameOver = false;
+let gameOn = false;
+let aniFrameId;
+
+document.querySelector("#startBtn").addEventListener("click", startGame);
 
 window.onload = function () {
     board = document.querySelector("#board");
@@ -66,16 +70,39 @@ alienImg.src = "assets/space_invaders/alien.png"
 createAliens ();
 
 
-    requestAnimationFrame(update);
+   // requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
     document.addEventListener("keyup", shoot);
 }
 
+function startGame (e){
+    e.preventDefault();
+    if (gameOn) {
+        cancelAnimationFrame(aniFrameId);
+    }
+    
+     // nulstil variabler
+    ship.x = shipX;
+    ship.y = shipY;
+    alienColums = 3;
+    alienRows = 2;
+    alienHastighedX = 1;
+    alienArray = [];
+    bulletArray = [];
+    score = 0;
+    gameOver = false;
+    createAliens();
+
+    // start game loop (igen)
+    aniFrameId = requestAnimationFrame(update);
+}
+
 function update (){
-requestAnimationFrame(update);
 
 if (gameOver) {
-    context.fillStyle="orange";
+    gameOn = false;
+
+    context.fillStyle="red";
     context.font="40px que";
     context.fillText("GAME OVER", board.width/2 - tileSize*3, board.height/2 - tileSize)
     return;
@@ -152,6 +179,8 @@ if (alienCount == 0){
 context.fillStyle="white";
 context.font="16px que";
 context.fillText(score, 5, 20);
+
+aniFrameId = requestAnimationFrame(update);
 }
 
 function moveShip(e) {
