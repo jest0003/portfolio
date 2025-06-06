@@ -90,6 +90,12 @@ justify-content: space-between;
   display: block;
   text-align: center;
 }
+h2 {
+    margin-top: 30px;
+}
+.marg_bottom_30 {
+    margin-bottom: 30px;
+}
 .grid_1-1_ms {
   display: grid;
   grid-template-columns: 1fr 1fr;

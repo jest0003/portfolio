@@ -123,6 +123,10 @@ a {
         display: block;
     background-color: white;
     }
+    .small_pic {
+    max-width: 300px;
+    height: auto;
+}
 }
 @media (width > 600px){
     .cta_blaa_wrapper {
