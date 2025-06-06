@@ -67,8 +67,8 @@ window.onload = function () {
 
 alienImg = new Image();
 alienImg.src = "assets/space_invaders/alien.png"
+alienHastighedX = 1;
 createAliens ();
-
 
    // requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
@@ -86,7 +86,6 @@ function startGame (e){
     ship.y = shipY;
     alienColums = 3;
     alienRows = 2;
-    alienHastighedX = 1;
     alienArray = [];
     bulletArray = [];
     score = 0;
@@ -169,7 +168,7 @@ if (alienCount == 0){
     //forøg antallet af aliens i colums og rækker med 1.
     alienColums = Math.min(alienColums + 1, colums/2 -2); //vi dividere det med halvdelen eftersom de fylder to i breden, og minusser to så vi er sikker på de har ldit plads at bevæge sig på.
     alienRows = Math.min(alienRows +1, rows-4); //så de ikke kan fylde helt nede ved skibet. så max 12 rækker.
-    alienHastighedX += 0.2; //gør at de bevæger sig hurtigere
+    alienHastighedX += 0.5; //gør at de bevæger sig hurtigere
     alienArray = [];
     bulletArray = [];
     createAliens(); 
