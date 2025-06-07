@@ -99,7 +99,7 @@ h2 {
 .grid_1-1_ms {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(1fr) minmax(1fr) minmax(1fr) minmax(1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   column-gap: 40px;
  margin-bottom: 30px;
  max-width: 1000px;
@@ -155,14 +155,14 @@ grid-column: 1/2;
 @media (width > 600px){
 .grid_2-3 {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  grid-template-columns: 2fr 3fr;
   gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .grid_3-2 {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  grid-template-columns: 3fr 2fr;
   gap: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -170,7 +170,6 @@ grid-column: 1/2;
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(0 1fr) minmax(0 1fr) minmax(0 1fr) minmax(0 1fr);
   column-gap: 40px;
   margin: 20px;
  margin-bottom: 30px;
@@ -180,7 +179,6 @@ grid-column: 1/2;
 .grid_2-1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: minmax(0 1fr) minmax(0 1fr) minmax(0 1fr) minmax(0 1fr);
   column-gap: 40px;
   margin: 20px;
  margin-bottom: 30px;
@@ -190,7 +188,6 @@ grid-column: 1/2;
 .grid_1-2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: minmax(0 1fr) minmax(0 1fr) minmax(0 1fr) minmax(0 1fr);
   column-gap: 40px;
   margin: 20px;
  margin-bottom: 30px;
