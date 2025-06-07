@@ -70,6 +70,9 @@ li {
     margin-bottom: 10px;
     padding-top: 10px;
 }
+.no_marg {
+    margin: 0;
+}
 .padding_20 {
     padding: 20px;
 }

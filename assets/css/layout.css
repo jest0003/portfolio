@@ -99,7 +99,7 @@ h2 {
 .grid_1-1_ms {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(0 1fr) minmax(0 1fr) minmax(0 1fr) minmax(0 1fr);
+  grid-template-rows: minmax(1fr) minmax(1fr) minmax(1fr) minmax(1fr);
   column-gap: 40px;
  margin-bottom: 30px;
  max-width: 1000px;
