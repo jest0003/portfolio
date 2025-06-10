@@ -60,13 +60,13 @@ window.onload = function () {
 
     //load rumskib/alien imgs
     shipImg = new Image();
-    shipImg.src = "assets/space_invaders/ship.png"
+    shipImg.src = "assets/space_invaders/shipv2.png"
     shipImg.onload = function () {
     context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
     }
 
 alienImg = new Image();
-alienImg.src = "assets/space_invaders/alien.png"
+alienImg.src = "assets/space_invaders/spaceship_evil.png"
 alienHastighedX = 1;
 createAliens ();
 
