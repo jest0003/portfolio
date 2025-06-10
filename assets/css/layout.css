@@ -85,6 +85,9 @@ justify-content: space-between;
   flex-direction: column;
   gap: 10px;
 }
+.marg_top_20 {
+  margin-top: 20px;
+}
 @media (width <=600px) {
     .mv_center {
   display: block;
